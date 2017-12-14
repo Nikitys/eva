@@ -11,27 +11,38 @@ block content
         .container
     .items-main
         .container.clearfix
-            .items-main-left
+            .items-main-left.items-main--full-page-menu
                 .items-main-left__title Фильтры
-                .items-main-left-block
-                    .items-main-left-block__title Средсва по уходу за волосами
-                    .items-main-left-list
-                        label.items-main-left-item
-                            input(type="checkbox").items-main-left-item__check
-                            .items-main-left-item__text Очищение
-                        label.items-main-left-item
-                            input(type="checkbox").items-main-left-item__check
-                            .items-main-left-item__text Очищение
-                        label.items-main-left-item
-                            input(type="checkbox").items-main-left-item__check
-                            .items-main-left-item__text Очищение
-                        label.items-main-left-item
-                            input(type="checkbox").items-main-left-item__check
-                            .items-main-left-item__text Очищение
+                    .items-main-right-top-center__title Сортировать по
+                        .items-main-right-top-center-close
+                            img(src="assets/images/icons/close-button-big.svg").items-main-right-top-center-close__img
+                - for(var i = 0; i < 4; i++){
+                    .items-main-left-block
+                        .items-main-left-block__title= `Фильтр${i}`
+                            .items-main-left-block__title--plus
+                                .plus-minus-toggle.collapsed
+                        .items-main-left-list
+                            label.items-main-left-item
+                                input(type="checkbox").items-main-left-item__check
+                                .items-main-left-item__text Очищение
+                            label.items-main-left-item
+                                input(type="checkbox").items-main-left-item__check
+                                .items-main-left-item__text Очищение
+                            label.items-main-left-item
+                                input(type="checkbox").items-main-left-item__check
+                                .items-main-left-item__text Очищение
+                            label.items-main-left-item
+                                input(type="checkbox").items-main-left-item__check
+                                .items-main-left-item__text Очищение
+                - }
             .items-main-right
                 .items-main-right-top
-                    .items-main-right-top-title Сортировать по
-                    .items-main-right-top-center
+                    .items-main-right-top-title(data-link="items-main-left") Фильтры
+                    .items-main-right-top-title(data-link="items-main-right-top-center") Сортировать по
+                    .items-main-right-top-center.items-main--full-page-menu
+                        .items-main-right-top-center__title Сортировать по
+                            .items-main-right-top-center-close
+                                img(src="assets/images/icons/close-button-big.svg").items-main-right-top-center-close__img
                         a(href="#").items-main-right-but Названию
                         a(href="#").items-main-right-but Цене
                         a(href="#").items-main-right-but Популярности

@@ -18,3 +18,8 @@
         @content;
     }
 }
+@mixin smallPhones{
+    @media screen and (max-width:330px){
+        @content;
+    }
+}
