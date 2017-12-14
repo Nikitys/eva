@@ -1,0 +1,17 @@
+.item-copy
+    .container
+        .item-copy__title=titleSlider
+        .item-copy-slider
+            .item-copy-list
+                - for (var i = 0; i < 7; i++){
+                .item-copy-slide
+                    .tovar-item.item-copy-item
+                        .tovar-item__img(style="background:url(assets/images/mainitem0.png) center center no-repeat;")
+                        .tovar-item__title Набор защита от солнца — SUN pack e-line
+                        .tovar-item__price 7 500 руб.
+                        a(href="#").main-but.tovar-item__but Купить
+                - }
+        a(href="#").slider-list-arrow.slider-list-arrow--prev
+            img(src="assets/images/arrow.svg").slider-list-arrow__img
+        a(href="#").slider-list-arrow.slider-list-arrow--next
+            img(src="assets/images/arrow.svg").slider-list-arrow__img

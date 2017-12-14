@@ -1,0 +1,26 @@
+<svg width="13" height="12" viewBox="0 0 13 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>sort</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1965 6)">
+<g id="sort">
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="matrix(1 0 0 -1 1965 5)" fill="#473729"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="matrix(1 0 0 -1 1965 1)" fill="#473729"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="matrix(1 0 0 -1 1965 -3)" fill="#473729"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="matrix(1 0 0 -1 1973 6)" fill="#473729"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 5.5 0L 0.5 0C 0.2 0 0 0.2 0 0.5L 0 1.5C 0 1.8 0.2 2 0.5 2L 5.5 2C 5.8 2 6 1.8 6 1.5L 6 0.5C 6 0.2 5.8 0 5.5 0Z"/>
+<path id="path1_fill" d="M 4.85 4.85L 4.15 5.55C 4.05 5.65 3.9 5.7 3.8 5.7C 3.65 5.7 3.55 5.65 3.45 5.55L 2.45 4.55C 2.3 4.4 2 4.5 2 4.75L 2 11.5C 2 11.75 1.75 12 1.5 12L 0.5 12C 0.25 12 -1.77636e-15 11.75 -1.77636e-15 11.5L -1.77636e-15 0.5C -1.77636e-15 0.35 0.0499996 0.25 0.15 0.15C 0.25 0.05 0.4 0 0.5 0C 0.65 0 0.75 0.05 0.85 0.15L 4.85 4.15C 4.95 4.25 5 4.35 5 4.5C 5 4.65 4.95 4.75 4.85 4.85Z"/>
+</defs>
+</svg>

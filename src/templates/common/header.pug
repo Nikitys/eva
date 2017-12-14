@@ -1,0 +1,29 @@
+header.header
+    .container
+        .header-left
+            a(href="#").header-logo
+                img(src="assets/images/logo.png", alt="").header-logo__img
+            .header-left-but
+                a(href="#").header-but-link
+                    img(src="assets/images/icons/placeholder.svg", alt="").header-but-link__img
+                    span.header-but-link__text Санкт-Петербург
+                a(href="#").header-but-link
+                    img(src="assets/images/icons/user.svg", alt="").header-but-link__img
+                    span.header-but-link__text Личный кабинет
+        .header-right
+            a(href="#").header-but-link
+                img(src="assets/images/icons/search.svg", alt="").header-but-link__img
+                span.header-but-link__text Поиск
+            a(href="#").header-but-link
+                img(src="assets/images/icons/copy.svg", alt="").header-but-link__img
+                span.header-but-link__text Каталог
+            a(href="#").header-but-link
+                .header-but-link__img
+                    img(src="assets/images/icons/shopping-bag.svg", alt="").header-but-link__img--bag
+                    span.header-but-link__img--number 1
+                span.header-but-link__text Корзина
+    - var navItem = ['Уход за волосами','Уход за волосами', 'Eva для профессионалов', 'Философия Eva', 'Eva блог' ]
+    nav.header-nav
+        .container
+            each item in navItem
+                a(href="#").header-nav__link= item

@@ -1,0 +1,35 @@
+<svg width="10" height="13" viewBox="0 0 10 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>placeholder</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(373 479)">
+<rect x="-373" y="-479" width="10" height="13" fill="#E5E5E5"/>
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M -720 -513L 720 -513L 720 2291L -720 2291L -720 -513Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="&#208;&#147;&#208;&#187;&#208;&#176;&#208;&#178;&#208;&#189;&#208;&#176;&#209;&#143;" clip-path="url(#clip-0)">
+<path d="M -720 -513L 720 -513L 720 2291L -720 2291L -720 -513Z" fill="#F3EEE8"/>
+<g id="&#208;&#168;&#208;&#176;&#208;&#191;&#208;&#186;&#208;&#176;">
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(-720 -513)" fill="#FFFFFF"/>
+</g>
+<g id="&#208;&#147;&#208;&#190;&#209;&#128;&#208;&#190;&#208;&#180;">
+<g id="placeholder">
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(-369 -475)" fill="#D1CDC9"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path2_fill" transform="translate(-373 -479)" fill="#D1CDC9"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 1440 0L 1440 127L 0 127L 0 0Z"/>
+<path id="path1_fill" d="M 1 2C 1.55228 2 2 1.55228 2 1C 2 0.447715 1.55228 0 1 0C 0.447715 0 0 0.447715 0 1C 0 1.55228 0.447715 2 1 2Z"/>
+<path id="path2_fill" d="M 5 0C 2.25 0 0 2.25 0 5C 0 6.1 0.35 7.15 1 8L 4.6 12.8C 4.7 12.9 4.85 13 5 13C 5.15 13 5.3 12.9 5.4 12.8L 9 8C 9.65 7.15 10 6.15 10 5C 10 2.25 7.75 0 5 0ZM 7.4 6.8L 5.2 9.75L 5.15 9.8C 5.05 9.9 4.9 9.85 4.8 9.75L 2.6 6.8C 2.2 6.3 2 5.65 2 5C 2 3.35 3.35 2 5 2C 6.65 2 8 3.35 8 5C 8 5.65 7.8 6.3 7.4 6.8Z"/>
+</defs>
+</svg>

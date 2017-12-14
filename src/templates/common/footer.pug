@@ -1,0 +1,19 @@
+- var footerList1 = ['E-Line', 'Mystic Diamond', 'Vitamin Recharge', 'Divina', 'Capilo', 'Ritualities', 'Hydra In', 'EvaJazz']
+- var footerList2 = ['Обратная связь', 'Персональные потребности', 'Акции', 'Помощь в выборе персональных средств', 'Оформление заказа', 'Подарочный сертификат' ]
+footer.footer
+    .container
+        .footer-block
+            .footer-block__title Линейки продукции
+            .footer-block-list
+                each item in footerList1
+                    a(href="#").footer-block-list__item= item
+        .footer-block
+            .footer-block__title Клиентская служба
+            .footer-block-list
+                each item in footerList2
+                    a(href="#").footer-block-list__item= item
+        .footer-block-last
+            .footer-block-last__text © 2017 Eva Professional Hair Care
+            a(href="#").footer-block-last__link Гарантия подлинности
+            a(href="#").footer-block-last__link Правовая информация
+            a(href="#").footer-block-last__link Сайт сделан RA Studio
