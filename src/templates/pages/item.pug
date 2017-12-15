@@ -1,0 +1,70 @@
+extends ../template
+
+block variables
+    - var title = 'Товар'
+block content
+    .bradcrumbs
+        .container
+            a(href="#").bradcrumbs-item Главная
+            a(href="#").bradcrumbs-item Защита Волос
+    .item-main
+        .container.clearfix
+            .item-main-left.clearfix
+                .item-main-left-slider-smal
+                    - for (var i = 0; i < 4; i++){
+                        .item-main-left-slider-smal__item
+                            .item-main-left-slider-smal__item-bg(style=`background:url("assets/images/mainitem${i}.png") center center no-repeat;background-size:cover;`)
+                    -}
+                .item-main-left-slider-big
+                    - for (var i = 0; i < 4; i++){
+                        .item-main-left-slider-big__item
+                            .item-main-left-slider-big__item-bg(style=`background:url("assets/images/mainitem${i}.png") center center no-repeat;background-size:cover;`)
+                    - }
+            .item-main-center
+                .item-main-center__title Fix Colour e-line 200ml
+                .item-main-center__title1 Кондиционер для защиты цвета окрашенных волос
+                .item-main-center-price
+                    .item-main-center-price__main 7500 руб.
+                    .item-main-center-price__under
+                        .item-main-center-price__under--un 8 700 руб.
+                        .item-main-center-price__under--norm Скидка − 1 200 руб.
+                .item-main-center-buts
+                    a(href="#").item-main-center-buts__link.item-main-center-buts__link--active 150 мл.
+                    a(href="#").item-main-center-buts__link 250 мл.
+                a(href="#").main-but.item-main-center__link Купить
+            .item-main-right
+                .item-main-right__text
+                    p Защищает волосы от вредного воздействия солнца и минимизирует воздействие хлора и соленой воды.
+                    p Экстракт макадамии и алоэ вера борются со старением, противодействуя клеточному окислению, восстанавливают волосы
+                a(href="#").item-main-right-but Перейти к описанию >
+    .item-copy
+        .container
+            .item-copy__title Товары из этой же линии
+            .item-copy-slider
+                .item-copy-list
+                    - for (var i = 0; i < 7; i++){
+                    .item-copy-slide
+                        .tovar-item.item-hov-item
+                            .tovar-item__img(style="background:url(assets/images/mainitem0.png) center center no-repeat;")
+                            .tovar-item__title Набор защита от солнца — SUN pack e-line
+                            .tovar-item__price 7 500 руб.
+                            a(href="#").main-but.tovar-item__but Купить
+                    - }
+            a(href="#").slider-list-arrow.slider-list-arrow--prev
+                img(src="assets/images/arrow.svg").slider-list-arrow__img
+            a(href="#").slider-list-arrow.slider-list-arrow--next
+                img(src="assets/images/arrow.svg").slider-list-arrow__img
+    .item-text
+        .container
+            .item-text-container
+                .item-text__title Cолнцезащитное масло для волос
+                .item-text-text
+                    p Защищает волосы от вредного воздействия солнца и минимизирует воздействие хлора и соленой воды.
+                    p Его формула включает фильтры UVA фильтры, масло орехов макадамии и экстракт алоэ вера.
+                    p Защищает, обеспечивая мгновенное увлажнение и помогает волосам восстановиться после воздействия солнца.
+                    p <b>Формула не содержит парабенов, силикона и сульфатов</b>
+                    p <b>Объем:</b> 150 ml
+                    p <b>Страна производства:</b> Испания.
+    - var titleSlider =  'Похожие товары'
+    include ../common/slider
+    

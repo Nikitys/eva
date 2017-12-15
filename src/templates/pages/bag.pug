@@ -1,0 +1,40 @@
+extends ../template
+
+block variables
+    - var title = 'Корзина'
+block content
+    .bradcrumbs
+        .container
+            a(href="#").bradcrumbs-item Главная
+            a(href="#").bradcrumbs-item Корзина
+    .bag
+        .container
+            .bag-left
+                - for(var i = 0; i < 2; i++){
+                    .bag-item
+                        .bag-item__img(style="background:url('assets/images/mainitem0.png') center center no-repeat;")
+                            a(href="#").bag-item__img--link
+                                img(src="assets/images/icons/close-button.svg")
+                        .bag-item-desc
+                            .bag-item__text Кондиционер для защиты цвета окрашенных волос 250 мл
+                            .bag-item__price 7500 руб.
+                            .bag-item__col 2 шт.
+                            .bag-item__itog 15000 руб.
+                - }
+            .bag-right
+                .bag-right-top
+                    .bag-right-top__title Промо код
+                    form(action='').bag-right-top-form
+                        input(type="text", placeholder="Введите код").main-form__input.bag-right-top-form__input
+                        input(type="submit", value="Применить").main-but.bag-right-top-form__submit
+                .bag-right-price
+                    span.bag-right-price__title Продукты:
+                    span.bag-right-price__text  30 000 руб.
+                .bag-right-price
+                    span.bag-right-price__title Скидка:
+                    span.bag-right-price__text  − 5 000 руб.
+                .bag-right-price.bag-right-price--bold
+                    span.bag-right-price__title Итого:
+                    span.bag-right-price__text  25 000 руб.
+                .bag-right-but
+                    a(href="#").bag-right-but__link.main-but Перейти к оплате

@@ -1,0 +1,67 @@
+extends ../template
+
+block variables
+    - var title = 'Корзина'
+block content
+    .bradcrumbs
+        .container
+            a(href="#").bradcrumbs-item Главная
+            a(href="#").bradcrumbs-item Корзина
+    .check
+        .container
+            .check-block
+                .check-block__title Адрес
+                form.check-form
+                    label.check-form-label
+                        .check-form-label__title Регион
+                        input(type="text", placeholder="Вводите текст").check-form-label__input
+                    label.check-form-label
+                        .check-form-label__title Город
+                        input(type="text", placeholder="Вводите текст").check-form-label__input
+                    label.check-form-label
+                        .check-form-label__title Адрес
+                        input(type="text", placeholder="Вводите текст").check-form-label__input
+                    .check-block__title.check-block__title--second Метод доставки
+                    label.check-form-label.check-form-label--radio
+                        input(type="radio").check-form-label__radio
+                        span.check-form-label__title.check-form-label__title--radio Курьерская служба <span>+ 500 руб.</span>
+                    label.check-form-label.check-form-label--radio
+                        input(type="radio").check-form-label__radio
+                        span.check-form-label__title.check-form-label__title--radio Самовывоз
+            .check-block
+                .check-block__title Личные данные
+                form.check-form
+                    label.check-form-label
+                        .check-form-label__title Имя и фамилия
+                        input(type="text",placeholder="Вводите текст").check-form-label__input
+                    label.check-form-label
+                        .check-form-label__title Телефон
+                        input(type="text",placeholder="Вводите текст").check-form-label__input
+                    label.check-form-label
+                        .check-form-label__title E-mail
+                        input(type="text",placeholder="Вводите текст").check-form-label__input
+                    .check-block__title.check-block__title--second Оплата
+                    label.check-form-label.check-form-label--radio
+                        input(type="radio").check-form-label__radio
+                        span.check-form-label__title.check-form-label__title--radio Картой на сайте <span>+ 5% скидки</span>
+                    label.check-form-label.check-form-label--radio
+                        input(type="radio").check-form-label__radio
+                        span.check-form-label__title.check-form-label__title--radio Наличными
+
+
+            .check-right
+                .check-block__title Заказ
+                .bag-right-price
+                    span.bag-right-price__title Продукты:
+                    span.bag-right-price__text  30 000 руб.
+                .bag-right-price
+                    span.bag-right-price__title Скидка:
+                    span.bag-right-price__text  − 5 000 руб.
+                .bag-right-price
+                    span.bag-right-price__title Доставка:
+                    span.bag-right-price__text  500 руб.
+                .bag-right-price.bag-right-price--bold
+                    span.bag-right-price__title Итого:
+                    span.bag-right-price__text  25 000 руб.
+                .bag-right-but
+                    a(href="#").bag-right-but__link.main-but Перейти к оплате

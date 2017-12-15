@@ -1,0 +1,14 @@
+<svg width="13" height="12" viewBox="0 0 13 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>speech</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-7527 -555)">
+<g id="speech">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(7527 555)" fill="#909090"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 11.5 0L 1.5 0C 0.65 0 0 0.65 0 1.5L 0 8C 0 8.85 0.65 9.5 1.5 9.5L 9.45 9.5C 9.5 9.5 9.55 9.5 9.6 9.55L 12.15 11.85C 12.25 11.95 12.35 12 12.5 12C 12.8 12 13 11.8 13 11.5L 13 1.5C 13 0.65 12.35 0 11.5 0ZM 10.6 7.85C 10.25 7.65 9.85 7.5 9.45 7.5L 2.25 7.5C 2.1 7.5 2 7.4 2 7.25L 2 2.25C 2 2.1 2.1 2 2.25 2L 10.75 2C 10.9 2 11 2.1 11 2.25L 11 7.6C 11 7.65 11 7.7 10.95 7.75C 10.9 7.85 10.75 7.9 10.6 7.85Z"/>
+</defs>
+</svg>

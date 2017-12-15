@@ -1,0 +1,30 @@
+extends ../template
+
+block variables
+    - var title = 'Блог'
+block content
+    .blog
+        .bradcrumbs
+            .container
+                a(href="#").bradcrumbs-item Главная
+                a(href="#").bradcrumbs-item Защита Волос
+        .blog-main
+            .container
+                .blog-main__title eva · блог
+                .blog-main__title1 Пишем редко, но метко — минимум раз в месяц, наши статьи будут ждать тебя на почте
+                a(href="#").main-but.blog-main__but Подписаться
+    .blog-list
+        .container
+            - for(var i = 0; i < 6; i++){
+                .blog-item
+                    .blog-item__img(style="background:url('assets/images/blogitem.jpg') center center no-repeat")
+                    .blog-item-top
+                        .blog-item-top-item
+                            img(src="assets/images/blogtop1.svg",).blog-item-top-item__img
+                            .blog-item-top-item__text 945
+                        .blog-item-top-item
+                            img(src="assets/images/blogtop2.svg",).blog-item-top-item__img
+                            .blog-item-top-item__text 945
+                    .blog-item__text Смысловую нагрузку ему нести совсем необязательно. Его применили в различных языках
+                    a(href="#").blog-item__but Читать дальше >
+            - }

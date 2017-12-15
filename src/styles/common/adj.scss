@@ -1,0 +1,67 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  p{
+    margin: 0;
+    bottom: 0;
+  }
+  a{
+    text-decoration: none;
+  }
+  ul{
+    padding: 0;
+    margin: 0;
+  }
+  ul li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .wrapper{
+    position: relative;
+    overflow: hidden;
+    min-height: 100%;
+    background: #F3EEE8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .container{
+    margin: 0 auto;
+    position: relative;
+    max-width: 1170px;
+    width: 95%;
+  }
+  html{
+    font-family: 'Lato-Regular';
+    color:#222;
+    @include laptop{
+      font-size:15px;
+    }
+    @include phones{
+      //font-size:14px;
+    }
+    @include smallPhones{
+      font-size: 13px;
+    }
+    &.no-scroll{
+      overflow: hidden;
+    }
+  }
+  .typed-cursor{
+    display: none;
+  }
+  *:focus{
+    outline: none;
+  }
+  
+  

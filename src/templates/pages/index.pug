@@ -1,0 +1,48 @@
+extends ../template
+
+block variables
+  - var title = 'Добро пожаловать'
+  - var mainPageSlider = ['Шампуни', 'Кондиционеры и маски', 'Особый уход Hydra.In', 'Прогрессивный уход Capilo', 'Стайлинг']
+block content
+  .main-page-slider
+    .container
+      .main-page-slider-content
+        - for (var i = 0; i < 4; i++){
+          .main-slider-item
+            .main-page-slider-content__title Философия ухода <br> за волосами <br> Eva professional
+            a(href="").main-page-slider-content__but.main-but Подробнее
+        - }
+  .main-page-items
+    .container
+      ul.main-page-items-list
+        each item,index in mainPageSlider
+          li.main-page-items-list-item
+            .main-page-items-list-item__img(style=`background:url(assets/images/mainitem${index}.png) center center no-repeat;`)
+            .main-page-items-list-item__title= item= item
+            a(href="#").main-page-items-list-item__link Каталог >
+  - var titleSlider =  'Товары'
+  include ../common/slider
+  .main-page-actions
+    .container
+      .main-page__title Акции и скидки
+      .main-page-actions-posttitle
+        a(href="#").main-page-actions-posttitle__link Посмотреть все предложения >
+      .main-page-actions-list
+        .main-page-actions-list-slider
+          - for (var i = 0; i < 3; i++){
+              .main-page-actions-item
+                .main-page-actions-item__img(style="background:url(assets/images/actionsitem.jpg) center center no-repeat;")
+                .main-page-actions-item-desc
+                  .main-page-actions-item__title Скидка - 70%
+                  .main-page-actions-item__title1 Vitamin recharge detox & co.
+                  a(href="#").main-but.main-page-actions-item__but Подробнее
+          - }
+        .main-page-actions-list-arrow
+          a(href="#").slider-list-arrow.main-page-actions-list--prev
+            img(src="assets/images/arrow.svg").slider-list-arrow__img
+          a(href="#").slider-list-arrow.main-page-actions-list--next
+            img(src="assets/images/arrow.svg").slider-list-arrow__img
+
+
+
+

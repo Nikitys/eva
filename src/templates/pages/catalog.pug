@@ -1,0 +1,64 @@
+extends ../template
+
+block variables
+    - var title = 'Каталог'
+block content
+    .bradcrumbs
+        .container
+            a(href="#").bradcrumbs-item Главная
+            a(href="#").bradcrumbs-item Защита Волос
+    .items-bg
+        .container
+    .items-main
+        .container.clearfix
+            .items-main-left.items-main--full-page-menu
+                .items-main-left__title Фильтры
+                    .items-main-right-top-center__title Сортировать по
+                        .items-main-right-top-center-close
+                            img(src="assets/images/icons/close-button-big.svg").items-main-right-top-center-close__img
+                - for(var i = 0; i < 4; i++){
+                    .items-main-left-block
+                        .items-main-left-block__title= `Фильтр${i}`
+                            .items-main-left-block__title--plus
+                                .plus-minus-toggle.collapsed
+                        .items-main-left-list
+                            label.items-main-left-item
+                                input(type="checkbox").items-main-left-item__check
+                                .items-main-left-item__text Очищение
+                            label.items-main-left-item
+                                input(type="checkbox").items-main-left-item__check
+                                .items-main-left-item__text Очищение
+                            label.items-main-left-item
+                                input(type="checkbox").items-main-left-item__check
+                                .items-main-left-item__text Очищение
+                            label.items-main-left-item
+                                input(type="checkbox").items-main-left-item__check
+                                .items-main-left-item__text Очищение
+                - }
+            .items-main-right
+                .items-main-right-top
+                    .items-main-right-top-title(data-link="items-main-left") Фильтры
+                    .items-main-right-top-title(data-link="items-main-right-top-center") Сортировать по
+                    .items-main-right-top-center.items-main--full-page-menu
+                        .items-main-right-top-center__title Сортировать по
+                            .items-main-right-top-center-close
+                                img(src="assets/images/icons/close-button-big.svg").items-main-right-top-center-close__img
+                        a(href="#").items-main-right-but Названию
+                        a(href="#").items-main-right-but Цене
+                        a(href="#").items-main-right-but Популярности
+                    .items-main-right-top-right
+                        a(href="#").items-main-right-but
+                            img(src="assets/images/sort.svg", alt="").items-main-right-but__img
+                        a(href="#").items-main-right-but
+                            img(src="assets/images/sort1.svg", alt="").items-main-right-but__img
+                .items-main-right-main
+                    - for (var i = 0; i < 6; i++){
+                        li.tovar-item.items-main-right-main__item
+                            .tovar-item__img(style="background:url(assets/images/mainitem0.png) center center no-repeat;")
+                            .tovar-item__title Набор защита от солнца — SUN pack e-line
+                            .tovar-item__price 7 500 руб.
+                            a(href="#").main-but.tovar-item__but Купить
+                    - }
+
+
+
